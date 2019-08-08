@@ -1,0 +1,24 @@
+datasource:   #Mysql数据连接
+  type: com.alibaba.druid.pool.DruidDataSource
+  url: jdbc:mysql://172.17.0.13:3306/anmeila_dev?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false
+  username: anmeila
+  password: anmeila2018!
+  driver-class-name: com.mysql.jdbc.Driver
+  druid:
+    initial-size: 10
+    max-active: 20
+    test-on-borrow: true
+    validation-query: SELECT 1 FROM DUAL
+    validation-query-timeout: 300
+    stat-view-servlet:
+      login-username: sqjz001
+      login-password: sqjz001
+    filter:
+      stat:
+        enabled: true
+        log-slow-sql: true
+      wall:
+        enabled: true
+        config:
+          multi-statement-allow: true
+
