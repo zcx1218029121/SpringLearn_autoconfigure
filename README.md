@@ -1,4 +1,4 @@
-# anmeila 自动装配过程详解 by zcx
+# 自动装配过程详解 by zcx
 
 首先我们来回顾一下springboot 是怎么进行自动装配的
 
